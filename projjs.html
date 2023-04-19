@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./projjs.css"/>
+    <title>Student management</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="ent">
+        <div class="tab">
+            <h2>List of registered students</h2>
+        </div>
+        <div class="lis">
+            <button class="supp"><i class="fas fa-trash"></i>Delete</button>
+            <button  class="ajout"><i class="fas fa-plus"></i>Add new student</button>              
+        </div>
+    </div>
+    <div>
+        <table cellpadding="10" cellspacing="9">
+            <tr class="head">
+                <th class="name">Name</th>
+                <th class="name">First name</th>
+                <th>Date of birth</th>
+                <th>Grade</th>
+            </tr>
+            <tr class="container-form">
+                <td>
+                    <input type="text" name="nom" class="user">
+                </td>
+                <td>
+                    <input type="text" name="nom" class="user">
+                </td>
+                <td>
+                    <input type="date" class="birthday" name="birthday" class="date">
+                </td>
+                <td>
+                    <label for="grade"></label>
+                    <select name="grade" class="grade">
+                        <option value="Senior year">Senior year</option>
+                        <option value="First class">First class</option>
+                        <option value="Second class">Second class</option>
+                </td>
+        </table>
+    </div>
+   <script>
+    const addBtn=document.querySelector('.ajout') 
+    const suppBtn=document.querySelector('.supp'); 
+    const tbody = document.querySelector('tbody');
+    var containerForm = document.querySelector('.container-form'); 
+    addBtn.addEventListener('click',function (){ // 
+        const copy = containerForm.cloneNode(true); 
+        const parent =  containerForm.parentNode; 
+        const lastChild  = parent.lastChild 
+         parent.insertBefore(copy,lastChild);
+    })
+    
+    suppBtn.addEventListener('click',function(){
+        tbody.removeChild(tbody.lastChild);
+    })
+    </script>
+</body>
+</html>

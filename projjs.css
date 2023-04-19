@@ -1,0 +1,89 @@
+
+@media screen {
+.ent {
+   
+    background-color:rgb(255, 153, 153);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+  }
+  
+.tab {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  
+.lis{
+    display: block;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.supp{
+    background-color: #d6d6c2	rgb(214, 214, 194);
+    font-size: 20px;
+    color: rgb(41, 40, 40);
+    border-radius: 20px;
+    width: 110px;
+    height: 45px;
+    border: none;
+}
+.ajout{
+    background-color: #ccccb3;
+    font-size: 20px;
+    color: rgb(44, 43, 43);
+    border-radius: 20px;
+    width: 200px;
+    height: 45px;
+    border: none;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+.act{
+    border-color: aliceblue;
+    background-color: white;
+}
+tr:nth-child(even) {
+    background-color: #ccccb3;
+
+  }
+
+ tr:nth-hover {
+    background-color: white;
+    
+  }
+.head{
+    font-size: 20px;
+}
+i{
+  font-size: 20px;
+  cursor: pointer;
+}
+.name{
+    width: 300px;
+}
+.grade{
+    border: 0px;
+    width: 150px;
+    font-size: 18px;
+    background-color: #ccccb3;
+}
+.user{
+    border: none;
+    width: 300px;
+    font-size: 18px;
+    background-color: #ccccb3;
+}
+.date{
+    border: none;
+    width: 200px;
+    font-size: 18px;
+    background-color: #ccccb3;
+}
+}
